@@ -11,7 +11,7 @@
  = Code =
  [http://code.google.com/p/php-examples/source/browse/trunk/php-examples/src/class_nwmls.php nwmls class] - more code in the repository.
 
- How I started the nwmls script.
+ How I start the nwmls script.
 {{{
 <?php
 //created by brandon donnelson oct 2007
