@@ -13,8 +13,8 @@
 
  How I started the nwmls script.
 {{{
-<?
-//created by brandon donnelsno oct 2007
+<?php
+//created by brandon donnelson oct 2007
 //used by cron to import nwmls data on a regular basis
 
 
