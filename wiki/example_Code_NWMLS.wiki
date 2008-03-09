@@ -60,7 +60,7 @@ $obj->fun_Process(0);
 //clean listings expireds and cancelds out
 $obj->fun_NWMLS_Auto_Process_Clean($Type="listing");
 
-//log start 
+//log end 
 $ThisService 	= 1252;
 $Success 	= 1;
 $Name 		= "NWMLS Data Download";
