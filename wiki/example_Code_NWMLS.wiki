@@ -24,9 +24,7 @@ set_time_limit(28800); //8hrs
 
 
 
-
 echo "<pre>\n";
-
 
 //log start 
 $ThisService 	= 1252;
@@ -36,25 +34,19 @@ $Description 	= "";
 $LogID = fun_Log($LogID, $ThisService, $Success, $Name, $Description);
 
 
-
 $obj = new class_getNWMLSData();
 $obj->UserName = "user";
 $obj->Password = "password";
 
-
-
 /***********************************************************/
 //LISTIN DATA
-$obj->fun_NWMLS_Auto_Process_GoBackDays($Type="listing", $GoBackDays=60, $StartBackDays=0); //WORKS
+$obj->fun_NWMLS_Auto_Process_GoBackDays($Type="listing", $GoBackDays=1, $StartBackDays=0); 
 /***********************************************************/
-
-
 
 /***********************************************************/
 //IMAGES DATA
-$obj->fun_NWMLS_Auto_Process_GoBackDays($Type="image", $GoBackDays=60, $StartBackDays=0); //WORKS
+$obj->fun_NWMLS_Auto_Process_GoBackDays($Type="image", $GoBackDays=1, $StartBackDays=0);
 /***********************************************************/
-
 
 /***********************************************************/
 //FTP IMAGES
@@ -62,10 +54,8 @@ $obj = new nwmls_Image;
 $obj->fun_Process(0);
 /***********************************************************/
 
-
 //clean listings expireds and cancelds out
 $obj->fun_NWMLS_Auto_Process_Clean($Type="listing");
-
 
 //log start 
 $ThisService 	= 1252;
@@ -75,10 +65,7 @@ $Description 	= "";
 $LogID = fun_Log($LogID, $ThisService, $Success, $Name, $Description);
 
 
-
 echo "</pre>\n";
-
-
 
 ?>
 END
