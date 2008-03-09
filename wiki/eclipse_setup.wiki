@@ -1,0 +1,5 @@
+#summary coding php in eclipse
+
+= Setup =
+
+[http://dev.phpeclipse.com/wiki/Installing_PHPEclips phpEclipse]
