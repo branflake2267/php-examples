@@ -2,4 +2,4 @@
 
 = Setup =
 
-[http://dev.phpeclipse.com/wiki/Installing_PHPEclips phpEclipse]
+[http://dev.phpeclipse.com/wiki/Installing_PHPEclips phpEclipse] - The simplest way to install PHPEclipse is to use the PHPEclipse update site.
