@@ -8,7 +8,10 @@
  = Info =
  Not all the dependencies are included. This can give you an idea how to do it.
 
- = Code = 
+ = Code =
+ [http://code.google.com/p/php-examples/source/browse/trunk/php-examples/src/class_nwmls.php nwmls class] - more code in the repository.
+
+ How I started the nwmls script.
 {{{
 <?
 //created by brandon donnelsno oct 2007
