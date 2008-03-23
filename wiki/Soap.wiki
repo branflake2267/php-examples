@@ -1,0 +1,38 @@
+#summary soap example
+
+= PHP Soap Example =
+
+
+
+= Soap Discovery =
+ Discover what soap (data) services are available on the soap server.
+{{{
+/**
+* figure out what soap functions and types are available
+* @param object $client Soap Client
+* @returns string $Response soap result
+*/
+public function fun_NWMLS_getSoapInfo()
+{
+	$WSDL = $this->WSDL; //class field, 'URL'
+
+	$client = new SoapClient($WSDL, array('trace' => 1) ); //trace for getLastResponse();
+
+	//debug (and figuring out what to do!)
+	//get functions and params
+	var_dump($client->__getFunctions());
+	var_dump($client->__getTypes());
+
+	$Response = $client->__getLastResponse();
+
+	echo "\n\n\n";
+	echo "Response:$Response\n";
+	echo "\n\n\n";
+
+	//debug
+	//echo "REQUEST:\n" . $client->__getLastRequest() . "\n"; //Shows query just sent
+	//echo "RESPONSE:\n" . $client->__getLastResponse() . "\n"; //gets the data
+
+	return $Response;
+}//end fun_NWMLS_getSoapInfo
+}}}
